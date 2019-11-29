@@ -7,7 +7,9 @@ body {
     line-height: 34px;
     font-family: Arial, Helvetica, sans-serif;
     color: #777;
-    }
+    background-image: url("../images/vintage-concrete.png");
+    background-repeat: fixed;
+}
 
 .container {
     width: 100%;
@@ -45,20 +47,23 @@ h2, h3 {
 
 #masthead {
     background: #fff;
-    margin: 0 0 30px;
+    margin-top: 15px;
     z-index: 99;
     color: #fff;
     overflow: auto;
     border-bottom: 2px solid #ccc;
     position: fixed;
-    width: 100%;
+    width: 66%;
+    left: 325px;
 }
  
 
 #snow {
     float: left;
     margin-right: 10px;
+    width: 30%;
 }
+
 
 
 #logo {
@@ -78,6 +83,7 @@ h2, h3 {
 nav {
     float: right;
     margin-top: 25px;
+    margin-right: 35px; 
 }
 
 nav a {
@@ -85,7 +91,7 @@ nav a {
     text-decoration: none;
     margin-left: 15px;
     display: inline-block;
-    border-left: 1px solid #efefef;
+    border-left: 2px solid #efefef;
     padding-left: 15px;
     line-height: 18px;
 }
@@ -96,17 +102,18 @@ nav a:first-child {
 /*main*/
 #main-container {
     padding-top: 130px;
-   }
+}
 
-.main-section {
+.main-container {
     background: #fff;
     padding: 30px;
-    margin: 0 0 40px 0;
+    margin-top: 55px;
+    margin-bottom: 75px;
     width: 100%;
-    max-width: 650px;
+    max-width: 960px;
     float: left;
     border: 1px solid #ddd;
-}
+   }
 
 .auth-image {
     width: 200px;
@@ -121,34 +128,42 @@ nav a:first-child {
 footer {
     background: #666;
     color: #fff;
-    padding: 30px 0;
+    padding: 15px 0;
     clear: both;
     border-top: 8px solid #4aaaa5;
     color: #ccc;
     font-size: 12px;
     text-align: center;
+    width: 66%; 
+    margin-bottom: 25px;
+    position: relative;
+    left: 325px;
+
+
+
 }
+
 
 /*portfolio*/
 .work {
+    display: inline-block;
     width: 274px;
     overflow: auto;
     position: relative;
-    float: left;
-    margin: 20px 0 25px;
-}
+    margin: 20px  20px;
+   }
 
 .work:nth-child(even) {
-    margin-right: 40px;
+    margin-right: 10px;
 }
 
-.work img {
+ img {
     width: 100%;
     border: 0 none;
     opacity: .8;
 }
 
-.work h3 {
+ h3 {
     border-bottom: 0;
     background: #4aaaa5;
     color: #fff;
@@ -199,10 +214,5 @@ textarea[type=submit] {
     font-size: 18px;
     padding: 10px 30px;
     cursor: pointer;
-    }
- .main-container {
-     
-    
-        background-image: url("cork-board.png") 
     }
  
