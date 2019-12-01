@@ -9,6 +9,8 @@ body {
     color: #777;
     background-image: url("../images/vintage-concrete.png");
     background-repeat: fixed;
+    min-height: calc(100vh - 70px);
+
 }
 
 .container {
@@ -47,14 +49,12 @@ h2, h3 {
 
 #masthead {
     background: #fff;
-    margin-top: 15px;
     z-index: 99;
     color: #fff;
     overflow: auto;
     border-bottom: 2px solid #ccc;
     position: fixed;
-    width: 66%;
-    left: 325px;
+    width: 100%;
 }
  
 
@@ -68,7 +68,7 @@ h2, h3 {
 
 #logo {
     width: 400px;
-    height: 90px;
+    height: 85px;
     background: #4aaaa5;
     float: left;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -78,7 +78,26 @@ h2, h3 {
     font-weight: 700;
     font-size: 30px;
     text-decoration: none;
+      }
+
+/* logo turns blue on hover */      
+#logo:hover {color: blue}
+
+/*nav bar*/
+
+/* tilt nav on hover */
+
+.tilt:hover {
+    transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
 }
+
+/* color nav red on hover */
+
+.tilt:hover{color: red}
 
 nav {
     float: right;
@@ -101,14 +120,13 @@ nav a:first-child {
 
 /*main*/
 #main-container {
-    padding-top: 130px;
+    padding-top: 140px;
+    padding-bottom: 40px; 
 }
 
 .main-container {
     background: #fff;
-    padding: 30px;
-    margin-top: 55px;
-    margin-bottom: 75px;
+    padding: 20px;
     width: 100%;
     max-width: 960px;
     float: left;
@@ -126,19 +144,19 @@ nav a:first-child {
 /*footer*/
 
 footer {
-    background: #666;
+    background: #666666;
     color: #fff;
-    padding: 15px 0;
+    padding: 10px;
     clear: both;
     border-top: 8px solid #4aaaa5;
     color: #ccc;
     font-size: 12px;
     text-align: center;
-    width: 66%; 
-    margin-bottom: 25px;
-    position: relative;
-    left: 325px;
-    }
+    width: 100%; 
+    position: fixed;
+    bottom: 0px;
+    height: 50px;   
+}   
 
 /*portfolio*/
 .work {
@@ -147,9 +165,9 @@ footer {
     overflow: auto;
     position: relative;
     margin: 20px  20px;
-   }
+      }      
 
-.work:nth-child(even) {
+    .work:nth-child(even) {
     margin-right: 10px;
 }
 
@@ -171,6 +189,15 @@ footer {
     line-height: 30px;
     margin-bottom: 0;
     font-weight: 300;
+}
+
+/* Rotates images on hover. */
+.work:hover {
+	transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
 }
 
 /*contact*/
