@@ -133,13 +133,6 @@ nav a:first-child {
     border: 1px solid #ddd;
    }
 
-.auth-image {
-    width: 200px;
-    height: auto;
-    margin-top: 10px;
-    float: left;
-    margin-right: 25px;
-}
 
 /*footer*/
 
@@ -245,3 +238,20 @@ textarea[type=submit] {
    /* Start http://www.cursors-4u.com */ * {cursor: url(http://ani.cursors-4u.net/cursors/cur-12/cur1103.ani), 
     url(http://ani.cursors-4u.net/cursors/cur-12/cur1103.png),
     auto !important;} /* End http://www.cursors-4u.com */
+
+    @media screen and (max-width: 768px) {
+       #logo {
+            width: 100%;
+           }
+       nav   {
+            width: 100%;
+            margin: 0px;     
+            background-color: lightblue;
+           }
+        a    {
+            width: 25%;
+            margin: 0;
+            padding: 0;
+           }         
+        }
+
