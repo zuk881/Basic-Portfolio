@@ -10,7 +10,8 @@ body {
     background-image: url("../images/vintage-concrete.png");
     background-repeat: fixed;
     min-height: calc(100vh - 70px);
-
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
 }
 
 .container {
@@ -255,3 +256,7 @@ textarea[type=submit] {
            }         
         }
 
+@media screen and (max-width 480px) {
+    footer {
+        hi
+    }
